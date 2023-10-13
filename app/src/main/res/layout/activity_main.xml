@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img" />
+
+        <TextView
+            android:id="@+id/tvSelectThePlatform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Select the platform you like:"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cbPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iphone"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cbAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/android"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cbWindowMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Window Mobile"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/rgRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate your girl/guy in love with you:"
+            android:textSize="20sp" />
+
+        <RatingBar
+            android:id="@+id/raRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvYourCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Country"
+            android:textSize="25sp" />
+
+        <Spinner
+            android:id="@+id/spSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvYourUniversity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your University"
+            android:textSize="25sp" />
+
+        <ListView
+            android:choiceMode="multipleChoice"
+            android:id="@+id/lvListView"
+            android:layout_width="wrap_content"
+            android:layout_height="500dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="150dp"
+            android:id="@+id/btnSubmit"
+            android:text="Submit"
+
+            />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="25dp"
+        />
+
+        <TextView
+            android:textSize="25dp"
+            android:id="@+id/tvDisplayResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</ScrollView>
